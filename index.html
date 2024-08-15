@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="encabeza">
+        <img class="logo" src="imagenes/logo.png" alt="logo Encriptador">
+        <h1 class="titulo">Encriptador</h1>
+    </div>
+    </header>
+    <main class="principal">
+        <section class="principal-main">
+            <textarea id="textoFinal"  class="texto" cols="30" rows="10" placeholder="Digite el texto que desea encriptar"></textarea>
+        <div>
+            <h5 class="requisito">!Digite el texto con solo letras minusculas, sin acento ni caracteres especiales</h5>
+        </div>
+        <div class="botones">
+            <button  onclick="botonEncriptador();" class="boton-encriptador">Encriptar</button>
+            <button  onclick="botonDesencriptador();" class="boton-desencriptador">Desencriptar</button>
+        </div>
+    </section>
+    <section class="cuadro-derecho">
+       
+        <textarea id="textoInicial" class="texto-encript" cols="20" rows="10"></textarea>
+       
+        <div>
+            <button id="fondo" onclick="botonCopiar();" class="boton-copiar">Copiar</button>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Monica Cepeda</p>
+        <p class="fecha">2024</p>
+    </footer>
+    <script src="encripta.js"> </script>
+</body>
+</html>
